@@ -1,0 +1,246 @@
+ul.nav-items {
+  list-style-type: none;
+  float: right;
+}
+ul.nav-items > li {
+  display: inline-block;
+  padding: 20px;
+}
+ul.nav-items > li > a {
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+ul.nav-items > li > a:hover {
+  color: #3ca59d;
+}
+
+.drop-down-button {
+  position: relative;
+}
+.drop-down-button:hover .drop-down-menu {
+  display: block;
+  opacity: 100;
+  top: 64px;
+  visibility: visible;
+  opacity: 100;
+}
+.drop-down-button:hover a {
+  color: #3ca59d;
+}
+.drop-down-button .drop-down-menu {
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.25);
+  top: 74px;
+  left: 0px;
+  background-color: white;
+  transition: 0.2s all ease-in-out;
+  width: 180px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  visibility: hidden;
+}
+.drop-down-button .drop-down-menu > ul {
+  list-style: none;
+  padding: 0px;
+}
+.drop-down-button .drop-down-menu > ul li:hover {
+  background-color: #3ca59d;
+}
+.drop-down-button .drop-down-menu > ul li:hover a {
+  color: white;
+}
+.drop-down-button .drop-down-menu > ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  display: block;
+  width: 100%;
+  padding: 9px 20px;
+}
+
+.nav-bar {
+  padding: 24px;
+}
+.nav-bar h2 .dot {
+  color: #f23a2e;
+}
+
+.hamburger {
+  display: none;
+  float: right;
+  font-size: 25px;
+  color: black;
+  background-color: white;
+  border: none;
+}
+.hamburger:hover {
+  color: black;
+}
+.hamburger:active, .hamburger:focus {
+  outline: none;
+}
+
+.side-mobile {
+  position: absolute;
+  top: 0px;
+  right: -300px;
+  display: none;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+  width: 300px;
+  z-index: 2;
+  padding-top: 20px;
+  padding-right: 20px;
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  margin: 0px;
+}
+.side-mobile li {
+  display: block;
+  padding: 30px 20px 20px 0px;
+}
+.side-mobile li a {
+  color: black;
+}
+.side-mobile li a:hover {
+  text-decoration: none;
+  color: #3ca59d;
+}
+
+.close {
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.close:active, .close:focus {
+  outline: none;
+}
+
+#drop {
+  color: #383838;
+  padding: 5px;
+  border-radius: 50%;
+}
+#drop:hover {
+  background-color: #e7e7e7;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  z-index: 1;
+  display: none;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.drop-mobile-menu {
+  display: none;
+}
+
+#drop {
+  transition: all 0.5s ease-in-out;
+}
+
+.slogan {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.des {
+  color: #5d5d5d;
+}
+
+.popular-prodcaster {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.popular-prodcaster-list {
+  list-style-type: none;
+  padding: 0px;
+}
+.popular-prodcaster-list .popular-prodcaster-item a {
+  text-decoration: none;
+  color: #888888;
+}
+.popular-prodcaster-list .popular-prodcaster-item a:hover .popular-prodcaster-item-name {
+  color: black !important;
+}
+.popular-prodcaster-list .popular-prodcaster-item-img {
+  width: 50px;
+  border-radius: 50%;
+}
+.popular-prodcaster-list .popular-prodcaster-item-name {
+  font-size: 1.1rem;
+  line-height: 1;
+  display: block;
+  transition: 0.2s all ease-in-out;
+}
+.popular-prodcaster-list .popular-prodcaster-item-podcasts {
+  font-size: 12px;
+  font-weight: 100;
+  display: block;
+}
+
+.podcast-name {
+  font-size: 1.75rem;
+}
+
+.black {
+  background-color: black;
+}
+
+.podcast-img {
+  width: 300px;
+  height: 239px;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.podcast-card .text {
+  box-sizing: border-box;
+  width: calc(100% - 300px);
+  color: #3ca59d;
+}
+.podcast-card .text h3 {
+  font-weight: 100 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .big-nav {
+    display: none;
+  }
+
+  .slogan {
+    font-size: 40px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .side-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .podcast-img {
+    width: 100%;
+  }
+
+  .podcast-card .text {
+    box-sizing: border-box;
+    width: auto;
+  }
+}
